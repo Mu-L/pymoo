@@ -7,10 +7,9 @@ build-backend = "setuptools.build_meta"
 
 
 [tool.cibuildwheel]
+build = "cp12-*"
 build-verbosity = 1
-skip = ["pp*", "cp36*"]
 before-all = "uname -a"
-archs = ["auto"]
 
 [tool.cibuildwheel.linux]
 archs = ["x86_64"]
