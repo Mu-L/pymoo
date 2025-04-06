@@ -80,8 +80,7 @@ data['long_description_content_type'] = 'text/x-rst'
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--nopyx', dest='nopyx', action='store_true',
-                    help='Whether the pyx files shall be considered at all.')
+parser.add_argument('--nopyx', dest='nopyx', action='store_true', help='Whether the pyx files shall be considered at all.')
 parser.add_argument('--nocython', dest='nocython', action='store_true', help='Whether pyx files shall be cythonized.')
 parser.add_argument('--nolibs', dest='nolibs', action='store_true', help='Whether the libraries should be compiled.')
 args, _ = parser.parse_known_args()
