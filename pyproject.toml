@@ -5,14 +5,12 @@ requires-python = "=3.12"
 requires = ["setuptools", "wheel", "numpy>=1.15", "Cython>=0.29"]
 build-backend = "setuptools.build_meta"
 
-[tool.cibuildwheel]
-before-all = "uname -a"
-archs = ["auto"]
 
 [tool.cibuildwheel]
 build-verbosity = 1
 skip = ["pp*", "cp36*"]
-
+before-all = "uname -a"
+archs = ["auto"]
 
 [tool.cibuildwheel.linux]
 archs = ["x86_64"]
