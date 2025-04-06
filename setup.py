@@ -107,9 +107,11 @@ def is_new_osx():
         return False
 
 
+os.environ['CFLAGS'] = "--verbose "
+
 # fix compiling for new macosx!
 if is_new_osx():
-    os.environ['CFLAGS'] = '-stdlib=libc++'
+    os.environ['CFLAGS'] += '-stdlib=libc++'
 
 
 # ============================================================
