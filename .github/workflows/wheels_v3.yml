@@ -17,7 +17,7 @@ jobs:
 
     env:
       CIBW_BUILD_VERBOSITY: 1
-      CIBW_BUILD: cp311-*
+#      CIBW_BUILD: cp311-*
 
     steps:
       - uses: actions/checkout@v4
@@ -34,5 +34,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: pymoo-${{ matrix.os }}-${{ matrix.cibw_archs }}
+          name: pymoo-${{ matrix.os }}-${{ strategy.job-index }}
           path: ./wheelhouse/*.whl
