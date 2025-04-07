@@ -9,3 +9,4 @@ before-all = "uname -a"
 
 [tool.cibuildwheel.linux]
 archs = "x86_64"
+build = "cp311-*"
