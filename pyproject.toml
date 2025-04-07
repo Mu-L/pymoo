@@ -6,7 +6,7 @@ build-verbosity = 1
 before-all = "uname -a"
 
 [tool.cibuildwheel.linux]
-archs = ["x86_64", "aarch64"]
+archs = ["x86_64"]
 
 [tool.cibuildwheel.windows]
 archs = ["x86", "AMD64"]
