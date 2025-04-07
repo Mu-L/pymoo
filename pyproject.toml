@@ -9,7 +9,7 @@ before-all = "uname -a"
 archs = ["x86_64", "aarch64"]
 
 [tool.cibuildwheel.windows]
-archs = ["x86_64", "AMD64"]
+archs = ["x86", "AMD64"]
 
 [tool.cibuildwheel.macos]
 archs = ["arm64"]
