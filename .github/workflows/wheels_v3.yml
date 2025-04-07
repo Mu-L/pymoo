@@ -13,7 +13,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        cpversion: [ "cp312" ]
+        os: [ { runs-on: ubuntu-latest, cibw-arch: manylinux_x86_64 } ]
 
     env:
       CIBW_BUILD_VERBOSITY: 1

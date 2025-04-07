@@ -1,21 +1,7 @@
-[project]
-requires-python = "==3.12"
-
 [build-system]
 requires = ["setuptools", "wheel", "numpy>=1.15", "Cython>=0.29"]
-build-backend = "setuptools.build_meta"
 
 
 [tool.cibuildwheel]
-build = "cp12-*"
 build-verbosity = 1
 before-all = "uname -a"
-
-[tool.cibuildwheel.linux]
-archs = ["x86_64"]
-
-[tool.cibuildwheel.windows]
-archs = ["AMD64", "x86"]
-
-[tool.cibuildwheel.macos]
-archs = ["x86_64", "arm64"]
