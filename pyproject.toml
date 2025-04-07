@@ -2,7 +2,7 @@
 requires = ["setuptools", "wheel", "numpy>=1.15", "Cython>=0.29"]
 
 
-[tool.cibuildwheel.overrides]
+[tool.cibuildwheel]
 build-verbosity = 1
 before-all = "uname -a"
 select = "cp311*"
