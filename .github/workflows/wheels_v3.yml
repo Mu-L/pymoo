@@ -48,6 +48,10 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Dependencies
+        run: |
+          pip install setuptools
+
       - name: Install pymoo
         run: |
           python setup.py sdist
