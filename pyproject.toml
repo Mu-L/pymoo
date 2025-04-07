@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel", "numpy>=1.15", "Cython>=0.29"]
+requires = ["setuptools<72.2", "wheel", "numpy>=1.15", "Cython>=0.29"]
 
 
 [tool.cibuildwheel]
