@@ -31,6 +31,7 @@ jobs:
         env:
           CIBW_BUILD_VERBOSITY: 1
           CIBW_BEFORE_ALL_MACOS: export LDFLAGS="-arch arm64"
+          CIBW_BUILD: cp*
 #          CIBW_BUILD: cp311-*
 
       - uses: actions/upload-artifact@v4
