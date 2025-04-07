@@ -35,5 +35,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          path: ./wheelhouse/*.whl
+          name: wheelhouse
+          path: wheelhouse
           overwrite: true
