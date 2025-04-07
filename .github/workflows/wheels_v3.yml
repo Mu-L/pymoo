@@ -17,6 +17,7 @@ jobs:
 
     env:
       CIBW_BUILD_VERBOSITY: 1
+      CIBW_BUILD: cp311-*
 
     steps:
       - uses: actions/checkout@v4
